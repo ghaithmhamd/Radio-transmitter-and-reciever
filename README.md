@@ -56,4 +56,4 @@ This repository contains the code and circuit setup for a wireless communication
 Upload the corresponding transmitter and receiver code to the Arduino Nano using the Arduino IDE. The code allows the devices to communicate wirelessly via the NRF24L01 modules.
 
 ## Share Your Setup:
-Feel free to share your setup on social media. Here's the [link to post your images on Facebook](https://www.facebook.com/share/p/19xkkejhZH/).
+Feel free to share your setup on social media. Here's the [aketch setup on facebook](https://www.facebook.com/share/p/19xkkejhZH/).
