@@ -1,3 +1,4 @@
+//Project Created by Ghaith Mhamdi
 //Rappel: j1PotX et j2PotX de mon transmitter sont inversés "<--" non pas "-->"
 #include <SPI.h>
 #include <nRF24L01.h>
