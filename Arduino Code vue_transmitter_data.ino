@@ -1,9 +1,11 @@
-//Project Created by Ghaith Mhamdi
+//Project created by Mhamdi Ghaith 
+//facebook page: HardSoftRoboticsMh: https://www.facebook.com/profile.php?id=61574058525266
+//Github: ghaithmhamd: https://github.com/ghaithmhamd
 //Rappel: j1PotX et j2PotX de mon transmitter sont inversés "<--" non pas "-->"
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
-RF24 radio(10, 9);// RF24 radio(8, 7);   // nRF24L01 (CE, CSN)
+RF24 radio(10, 9);/* RF24 radio(8, 7); */  // nRF24L01 (CE, CSN)
 const byte address[6] = "00001";
 unsigned long lastReceiveTime = 0;
 unsigned long currentTime = 0;
@@ -37,13 +39,6 @@ void setup() {
   Serial.begin(9600);
   Serial.println("looking for transmitter");
   while(!radio.available()); 
-  if (radio.available()) {
-    radio.read(&data, sizeof(Data_Package)); 
-    while (data.pot2>10) {
-      delay(4);
-      Serial.println("descendez pot2");
-    }
-  }
 
 }
 void loop() {
@@ -85,7 +80,6 @@ void loop() {
   delay(1000);
 }
 void resetData() {
-  // Reset the values when there is no radio connection - Set initial default values
   data.j1PotX = 127;
   data.j1PotY = 127;
   data.j2PotX = 127;
